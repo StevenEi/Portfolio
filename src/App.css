@@ -4,7 +4,17 @@
   height: 100vh;
 }
 
-.bg {
+.about-description {
+  background-color: white;
+  font-family: garamond;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-color: black;
+  border-style: dashed;
+}
+
+.about-page {
   background-image: url("../src/images/background.jpg");
   height: 100%;
   background-position: center;
@@ -12,9 +22,40 @@
   background-size: cover;
 }
 
-.carousel {
-  max-width: 500px;
-  max-height: 500px;
+.about-photos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5%;
+}
+
+.about-photo-1 {
+  max-width: 25%;
+  max-height: 10%;
+}
+
+.about-photo-2 {
+  max-width: 25%;
+  max-height: 10%;
+}
+
+.about-photo-3 {
+  max-width: 25%;
+  max-height: 10%;
+}
+
+.about-photo-4 {
+  max-width: 22%;
+  max-height: 10%;
+}
+
+.bg {
+  background-image: url("../src/images/background.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .card {
@@ -38,6 +79,35 @@
 .card-btn {
   padding: 5px;
   margin: 5px;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  bottom: 0%;
+  background-color: #333;
+  color: white;
+  display: table;
+  margin: auto;
+}
+
+.footer-item {
+  list-style-type: none;
+  margin: 5px;
+}
+
+.footer-item a {
+  display: inline;
+  margin: 50px;
+  color: white;
 }
 
 .main-container {
@@ -101,7 +171,6 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: red;
 }
 
 .project-item a {
@@ -113,21 +182,103 @@
   float: right;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.welcome-text {
+  color: white;
+  font-weight: 500;
+}
+
+.welcome-txt-1 {
+  border-radius: 9%;
+  text-align: center;
+  display: inline-block;
+  width: 50%;
+  background-color: black;
+  margin-top: 90px;
+  animation: fadeIn linear 2.5s;
+  -webkit-animation: fadeIn linear 2.5s;
+  -moz-animation: fadeIn linear 2.5s;
+  -o-animation: fadeIn linear 2.5s;
+  -ms-animation: fadeIn linear 2.5s;
+}
+
+.welcome-txt-2 {
+  border-radius: 9%;
+  text-align: center;
+  display: inline-block;
+  width: 65%;
+  background-color: black;
+  margin-top: 180px;
+  animation: fadeIn linear 2.5s;
+  -webkit-animation: fadeIn linear 2.5s;
+  -moz-animation: fadeIn linear 2.5s;
+  -o-animation: fadeIn linear 2.5s;
+  -ms-animation: fadeIn linear 2.5s;
+}
+
+.welcome-txt-3 {
+  border-radius: 9%;
+  text-align: center;
+  display: inline-block;
+  width: 75%;
+  background-color: black;
+  margin-top: 225px;
+  animation: fadeIn linear 2.5s;
+  -webkit-animation: fadeIn linear 2.5s;
+  -moz-animation: fadeIn linear 2.5s;
+  -o-animation: fadeIn linear 2.5s;
+  -ms-animation: fadeIn linear 2.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (min-resolution: 192dpi) { 
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+}
+
+@media query {
 }
